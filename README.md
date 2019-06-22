@@ -1,1 +1,37 @@
 # mstakx-task-Level2
+
+1. HA Kubernetes Cluster created on GCP via using Kubeadm.
+
+For rest of the tasks, I'm using existing cluster created in Level1.
+
+2. Setup Jenkins for deployment purpose.
+
+3. Create namespace "development". 
+
+kubectl create ns development
+
+4. Guest-book application deployed in "development" namespace. Snippets are uploaded as well. 
+
+git clone https://github.com/kubernetes/examples.git
+cd examples/guestbook
+kubectl -n development apply -f redis-master-deployment.yaml -f redis-master-service.yaml 
+kubectl -n development apply -f redis-slave-deployment.yaml -f redis-slave-service.yaml
+kubectl -n development apply -f frontend-deployment.yaml -f frontend-service.yaml
+
+5. Helm Already configured to install ingress-controller for Level1 task. Below are the steps for same:-
+
+curl -o get_helm.sh https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get
+chmod +x get_helm.sh
+./get_helm.sh
+kubectl create serviceaccount --namespace kube-system tiller
+kubectl create clusterrolebinding tiller-cluster-rule --clusterrole=cluster-admin --serviceaccount=kube-system:tiller
+helm init --service-account tiller
+
+6. Help to deploy application in Kubernetes cluster via CI Server.
+
+7. Create namespace "monitoring"
+
+kubectl create ns monitoring
+
+8. 
+
