@@ -33,5 +33,14 @@ helm init --service-account tiller
 
 kubectl create ns monitoring
 
-8. 
+8. Prometheus setup was done by following below link:-
+
+https://linuxacademy.com/blog/kubernetes/running-prometheus-on-kubernetes/
+
+9. Grafana setup was done by following below link:-
+
+https://docs.portworx.com/portworx-install-with-kubernetes/operate-and-maintain-on-kubernetes/monitoring/monitoring-px-prometheusandgrafana.1/#installing-grafana
+
+
+
 
