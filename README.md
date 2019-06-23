@@ -6,7 +6,9 @@ For rest of the tasks, I'm using existing cluster created in Level1.
 
 2. Setup Jenkins for deployment purpose.
 
-3. Create namespace "development". 
+https://linuxize.com/post/how-to-install-jenkins-on-ubuntu-18-04/
+
+3. Create namespace "development".  
 
 kubectl create ns development
 
