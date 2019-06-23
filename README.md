@@ -2,6 +2,8 @@
 
 1. HA Kubernetes Cluster created on GCP via using Kubeadm.
 
+https://blog.inkubate.io/install-and-configure-a-multi-master-kubernetes-cluster-with-kubeadm/
+
 For rest of the tasks, I'm using existing cluster created in Level1.
 
 2. Setup Jenkins for deployment purpose.
