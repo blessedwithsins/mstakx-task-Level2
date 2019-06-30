@@ -1,6 +1,6 @@
 # mstakx-task-Level2
 
-1. HA Kubernetes Cluster created on GCP via using Kubeadm. #NotCompleted 
+1. HA Kubernetes Cluster created on GCP via using Kubeadm. 
 
 https://blog.inkubate.io/install-and-configure-a-multi-master-kubernetes-cluster-with-kubeadm/
 
